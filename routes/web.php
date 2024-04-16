@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -47,3 +48,8 @@ Route::get('edit-proj/{id}',[ProjectController::class,'editDemo']);
 Route::post('edit-proj',[ProjectController::class,'editProject']);
 
 Route::get('delete-proj/{id}',[ProjectController::class,'destroy']);
+
+
+
+Route::get('home', [FrontController::class, 'show'])->name('home');
+Route::get('/single-project/{id}', [FrontController::class, 'view'])->name('single-projects');
