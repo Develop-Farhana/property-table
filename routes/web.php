@@ -46,3 +46,4 @@ Route::get('edit-proj/{id}',[ProjectController::class,'editDemo']);
 // Route::get('/projects/{id}/edit',[ProjectController::class,'editDemo']);
 Route::post('edit-proj',[ProjectController::class,'editProject']);
 
+Route::get('delete-proj/{id}',[ProjectController::class,'destroy']);

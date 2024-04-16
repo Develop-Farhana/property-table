@@ -98,7 +98,12 @@ class ProjectController extends Controller
         return redirect('project'); 
       }
 
-
+      public function destroy($id)
+    {
+      $property=Project::find($id);
+      $property->delete();
+        return redirect('project');
+    }
       
 
 }

@@ -36,7 +36,7 @@
 </td>
 <td>
       <a href={{"edit-proj/".$property['id']}}  class="btn btn-outline-success">Edit</a>
-     <a href={{"delete/".$property['id']}} class="btn btn-outline-Danger">Delete</a>
+     <a href={{"delete-proj/".$property['id']}} class="btn btn-outline-Danger">Delete</a>
          
       </td>
     </tr>
